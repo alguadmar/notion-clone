@@ -25,10 +25,11 @@ export const Heading = () => {
         </div>
       )}
       {isAuthenticated && !isLoading && (
-              <Button>
-                <Link href='/documents'/>
+              <Button asChild>
+                <Link href='/documents'>
               Enter Flotion
               <ArrowRight className="h-4 w-4 ml-2"/>
+                </Link>
             </Button>
       )}
       {!isAuthenticated && !isLoading && (
